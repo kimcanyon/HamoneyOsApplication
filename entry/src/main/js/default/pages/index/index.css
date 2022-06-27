@@ -1,0 +1,52 @@
+/* 页面整体纵向布局 */
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-style: italic;
+
+
+}
+/* 图片区域布局 */
+.image-block {
+    height: 50%;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+/* 图片布局 */
+image {
+    width: 150px;
+    height: 150px;
+    animation-name: Go;
+    animation-iteration-count: infinite; /* 图片不限旋转次数 */
+    animation-timing-function: linear; /* 动画匀速转动 */
+}
+
+/* 进度条区域布局 */
+.slider-block {
+    height: 50%;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    flex-direction: column;
+}
+/* 进度条布局 */
+slider {
+    margin-bottom: 20px;
+}
+/* 文字布局 */
+text {
+    margin-bottom: 20px;
+    font-size: 40px
+}
+/* 图片旋转角度：0到360° */
+@keyframes Go
+{
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
